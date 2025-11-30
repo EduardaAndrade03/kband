@@ -17,6 +17,9 @@ body{
     background-color: #0c2344;
     /* background-color: #273c58; */
 }
+main{
+    height: 90vh;
+}
 a{
     text-decoration: none;
     color: whitesmoke;
@@ -29,7 +32,7 @@ li{
     margin: 0 auto;
     left: 0;
     right: 0;
-    height: 5rem;
+    height: 10vh;
     border-radius: 0 0 3rem 3rem;
     position: fixed;
     top: 0;
@@ -38,12 +41,13 @@ li{
     background-color: #273c58;
     display: flex;
     flex-direction: column;
+    justify-content: space-around;
     align-items: center;
     box-shadow: 0 4px 10px rgba(0,0,0,0.3);
 }
 .nav-links ul{
     display: flex;
-}
+}   
 .nav-links a{
     font-size: 1.1rem;
     transition: all 0.3s ease;
@@ -59,17 +63,29 @@ li{
     background-color: rgb(163, 163, 163); */
 }
 .logomarca{
+    letter-spacing: 2px;
     align-items: center;
     font-family: 'Righteous';
     font-size: 2.2rem;
     cursor: default;
     /* font-weight: bold; */
 }
+.mobile-menu{
+    cursor: pointer;
+    display: none;
+}
+.mobile-menu div{
+    width: 32px;
+    height: 2px;
+    background-color: #fff;
+    margin: 8px;
+}
 
+
+/* seção 1 */
 
 #s1-inicio{
-    margin-top: 6vh;
-    margin-bottom: 6.7vh;
+    padding: 6vh 3vw 6.7vh 0vh;
     display: flex;
 }
 #s1-inicio img{
@@ -110,6 +126,7 @@ li{
 /* seção 2 */
 
 #s2-i{
+    margin: 0;
     box-shadow: 0px 0.6px 30px black;
     background-color: #273c58;
     display: flex;
@@ -125,8 +142,26 @@ li{
     height: 43vh;
 }
 
+/* test */
+
+@media (max-width: 999px){
+    #s2-i img{
+        height: 35vh;
+        margin: 0px auto;
+    }
+    #s2-i{
+        flex-direction: column;
+        display: flex;
+    }
+    #s2-i div{
+        font-size: 1rem;
+        margin: 0 40px 40px;
+    }
+}
+
 /* seção 3 */
 #s3-i{
+    padding: 50px;
     height: 80vh;
     display: flex;
     flex-direction: column;
@@ -163,6 +198,25 @@ li{
 #integrantes div:hover{
     transform: scale(1.1);
 }
+
+/* testando */
+@media (max-width:999px){
+    #integrantes{
+        flex-wrap: wrap;
+    }
+    #integrantes div{
+        margin-top: 40px;
+    }
+    #s3-i{
+        padding: 40px 20px;
+        height: 200vh;
+    }
+    #s3-i h2{
+        margin-bottom: 0;
+        font-size: 60px;
+    }
+}
+
 #hg:hover p{
     color: palevioletred;
 }
@@ -188,3 +242,4 @@ li{
 #ik:hover{
     box-shadow: 0px 0px 8px 2px rgb(236, 45, 45);
 }
+
