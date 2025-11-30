@@ -144,7 +144,7 @@ li{
 
 /* test */
 
-@media (max-width: 999px){
+@media (max-width: 1100px){
     #s2-i img{
         height: 35vh;
         margin: 0px auto;
@@ -200,7 +200,7 @@ li{
 }
 
 /* testando */
-@media (max-width:999px){
+@media (max-width:1100px){
     #integrantes{
         flex-wrap: wrap;
     }
@@ -208,14 +208,30 @@ li{
         margin-top: 40px;
     }
     #s3-i{
-        padding: 40px 20px;
-        height: 200vh;
+        height: 50rem;
     }
     #s3-i h2{
         margin-bottom: 0;
         font-size: 60px;
     }
 }
+@media (max-width:700px){
+    #integrantes{
+        flex-wrap: wrap;
+    }
+    #integrantes div{
+        margin-top: 40px;
+    }
+    #s3-i{
+        height: 90rem;
+
+    }
+    #s3-i h2{
+        margin-bottom: 0;
+        font-size: 60px;
+    }
+}
+
 
 #hg:hover p{
     color: palevioletred;
