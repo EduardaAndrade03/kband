@@ -324,3 +324,89 @@ li{
 .kh{
     background-color: rgb(135, 56, 88);
 }
+
+/* músicas */
+
+
+.tb{
+    background-color: rgb(17, 73, 118);
+}
+.gl{
+    background-color: rgb(166, 60, 95);
+}
+.nf{
+    color: black;
+    background-color: rgb(233, 230, 63);
+}
+.ic{
+    background-color: rgb(139, 40, 57);
+}
+.sc{
+    background-color: rgb(62, 28, 92);
+}
+.musicas{
+    border-radius: 10px;
+    padding: 50px;
+    margin:  6rem 7rem;
+}
+.ftt{
+    display: flex;   
+    margin-bottom: 20px;
+}
+.musicas h1{
+    margin-bottom: 15px;
+    font-family: 'Righteous';
+    font-size: 2.7rem;
+    text-align: center;
+    letter-spacing: 5px;
+}
+.musicas img{
+    transition: all 0.2s ease;
+    border-radius: 10px;
+    box-shadow: 0 0 30px -11px black;
+    height: 50vh;
+}
+.musicas img:hover{
+    opacity: 0.9;
+}
+.texto-musicas p{
+    text-align: justify;
+    margin: 0px 0 0 50px ;
+}
+.play{
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.butons{
+    width: 10vw;
+    margin-top: 3vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+button{
+    cursor: pointer;
+    text-align: center;
+    background: none;
+    border: none;
+    color: whitesmoke;
+    font-size: 40px;
+    transition: all 0.3s ease;
+}
+button:hover{
+    transform: scale(1.06);
+    color: rgb(202, 199, 199);
+    opacity: 0.8;
+}
+.pauseBtn:hover{
+    transform: scale(1.09);
+}
+button:active{
+    transform: scale(0.9);
+}
+.pauseBtn:active{
+    transform: scale(0.9);
+}
